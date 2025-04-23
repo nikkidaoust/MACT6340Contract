@@ -31,7 +31,7 @@ module.exports = {
     outputFile: "gas-report.txt",
     noColors: true,
   },
-  defaultNetwork: "hardhat", //"polygonAmoy", // hardhat for testing, change this for different networks
+  defaultNetwork: "polygonAmoy", // hardhat for testing, change this for different networks
   networks: {
     hardhat: {
       chainId: 31337,

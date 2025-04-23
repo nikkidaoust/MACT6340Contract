@@ -8,7 +8,7 @@ describe("NikkiNFTContract", async function () {
     mint_price: "20000000000000000",
     max_tokens: 3,
     base_uri:
-      "https://ipfs.io/ipfs/bafkreidr5a7hvyiilxfug2yqpbkdowcahpbsw4jszstz6iur5ae5dx7b54",
+      "https://ipfs.io/ipfs/bce3cc40-9c8f-41a5-97c1-b8625e9e340c",
     royaltyArtist: "0x48848BD7564Ddd6D015D9026aA582887f49FD636",
     royaltyBasis: 500,
     gasLimit: 30000000, // use a gas limit within the block gas limit
