@@ -9,7 +9,7 @@ describe("NikkiNFTContract", async function () {
     max_tokens: 3,
     base_uri:
       "https://ipfs.io/ipfs/bce3cc40-9c8f-41a5-97c1-b8625e9e340c",
-    royaltyArtist: "0x48848BD7564Ddd6D015D9026aA582887f49FD636",
+    royaltyArtist: process.env.STUNT_WALLET_ADDRESS,
     royaltyBasis: 500,
     gasLimit: 30000000, // use a gas limit within the block gas limit
   };
@@ -326,7 +326,7 @@ describe("NikkiNFTContract", async function () {
     });
 
     it("should emit an event after funds are distributed during mint", async function () {
-      //      const owner = "0xB18280dAF9f0b4f7699A66451199bf30c1018338";
+      //      const owner = "0x48848BD7564Ddd6D015D9026aA582887f49FD636";
       const [owner, artist, buyer] = await ethers.getSigners();
       const uriString = "someString";
       expect(
